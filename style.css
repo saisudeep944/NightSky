@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(./sunset-mountain-silhouette-horizon.jpg) ;
+    color: #C5C6C7;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #66FCF1;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    background: #000000;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #66FCF1;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #C5C6C7;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+    background: url('night-sky-background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.cta-btn {
+    padding: 10px 30px;
+    background: #66FCF1;
+    color: #0B0C10;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.cta-btn:hover {
+    background: #45A29E;
+}
+
+/* Features Section */
+.features {
+    padding: 50px 0;
+    background: #0B0C10;
+}
+
+.features h2 {
+    text-align: center;
+    color: #66FCF1;
+    margin-bottom: 50px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.feature-item {
+    background: #1F2833;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.feature-item h3 {
+    margin-bottom: 15px;
+    color: #66FCF1;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 50px 0;
+    background: #1F2833;
+}
+
+.gallery h2 {
+    text-align: center;
+    color: #66FCF1;
+    margin-bottom: 30px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Download Section */
+.download {
+    background: #45A29E;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.download h2 {
+    color: #0B0C10;
+}
+
+.download p {
+    color: #0B0C10;
+    margin-bottom: 30px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 0;
+    background: #1F2833;
+}
+
+.contact h2 {
+    text-align: center;
+    color: #66FCF1;
+    margin-bottom: 30px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background: #C5C6C7;
+    color: #0B0C10;
+}
+
+.contact button {
+    width: 100%;
+    padding: 10px;
+    background: #66FCF1;
+    color: #0B0C10;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.contact button:hover {
+    background: #45A29E;
+}
+
+/* Footer */
+footer {
+    padding: 20px 0;
+    background: #1F2833;
+    text-align: center;
+    color: #C5C6C7;
+}
+
+/* Gallery Image Hover Effect */
+.gallery-grid img {
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Preview Image Styling */
+#preview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(251, 250, 250, 0.5);
+    background-color: #000000;
+}
+/* Styling for Editing Section */
+.editing-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.preview-area {
+    width: 50%;
+    text-align: center;
+    background: #1F2833;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+.preview-area img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.controls-area {
+    width: 45%;
+    background: #1F2833;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.control-item {
+    margin-bottom: 15px;
+}
+
+/* Button Styling */
+button {
+    background-color: #66FCF1;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a29e;
+}
